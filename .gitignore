@@ -1,0 +1,7 @@
+Resources/server*
+Public/js
+dist/
+browser-test/
+Packages
+node_modules
+.build

@@ -1,0 +1,9 @@
+extends: 
+  - eslint-config-remko
+  - eslint-config-remko/es6
+env:
+  node: true
+  browser: true
+rules:
+  no-console: 0
+  camelcase: 0

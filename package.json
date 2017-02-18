@@ -1,0 +1,43 @@
+{
+  "name": "plainize",
+  "version": "0.0.1",
+  "description": "Light but powerful HTML to plain text conversion",
+  "main": "dist/plainize.js",
+  "repository": "https://github.com/remko/plainize",
+  "homepage": "https://el-tramo.be/plainize",
+  "author": {
+    "name": "Remko Tronçon",
+    "url": "https://el-tramo.be"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "mocha --reporter dot 'test/**/*-test.js' --require ./test/dom.js --compilers js:babel-core/register",
+    "test:ci": "npm run test -- --reporter spec",
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint .",
+    "clean": "rimraf dist browser-test",
+    "prepublish": "npm run lint && npm run test && npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "chai": "^3.5.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "eslint": "2.4.0",
+    "eslint-config-remko": "^2.0.2",
+    "jsdom": "^9.11.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.0",
+    "webpack": "^2.2.1",
+    "xmldom": "^0.1.27"
+  },
+  "babel": {
+    "plugins": [],
+    "presets": [
+      "es2015"
+    ]
+  }
+}
