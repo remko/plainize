@@ -1,6 +1,6 @@
 {
   "name": "plainize",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Light but powerful HTML to plain text conversion",
   "main": "dist/plainize.js",
   "repository": "https://github.com/remko/plainize",
