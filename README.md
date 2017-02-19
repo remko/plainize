@@ -15,6 +15,9 @@ Convert an HTML string into plain text.
      - Tables aren't converted nicely
      - ...
 
+- There aren't any options yet. This isn't by design, just because I
+  didn't need them yet.
+
 - Currently doesn't work on Node.js out of the box. It's easy to
   do so (it's done for the unit tests), but since [`html-to-text`][html-to-text]
   doesn't have any problems under Node.js, I didn't see the need so far.
